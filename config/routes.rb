@@ -1,4 +1,6 @@
 Cytosite::Application.routes.draw do
+  get "users/new"
+
   get "static_pages/home"
 
   get "static_pages/help"
@@ -6,6 +8,14 @@ Cytosite::Application.routes.draw do
   get "static_pages/overview"
 
   get "static_pages/images"
+
+  root to: 'static_pages#home'
+  
+  match '/signup', to: 'users#new'
+
+  match '/home', to: 'static_pages#home'
+  match '/overview', to: 'static_pages#overview'
+  match '/images', to: 'static_pages#images'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
