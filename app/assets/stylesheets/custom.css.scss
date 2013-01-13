@@ -1,0 +1,159 @@
+body {
+    color: #B9ADAA;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F4F0;
+}
+
+h2 {
+  color: skyblue;
+}
+
+textarea {
+  height: 3em;
+}
+
+.side_padded {
+  padding: 0 20px;
+}
+
+label {
+  color: #B9ADAA;
+  font-weight: bold;
+}
+
+.box {
+  background: none repeat scroll 0 0 #404040;
+  border-radius: 5px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+a, a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Hacked table styles start */
+
+.table th {
+  background-color: grey;
+}
+
+.table td {
+  background-color: darkgray;
+}
+
+.table tbody tr:hover td {
+  background-color: white;
+}
+
+.table td, .table th, .table td a {
+  color: black;
+}
+
+.table td a.btn {
+  color: white;
+}
+
+/* Hacked table styles end */
+
+/* home page styles start */
+
+.carousel {
+  width: 376px;
+  margin: auto;
+}
+
+/* home page styles end */
+
+/* login page styles start */
+
+.login_box {
+  margin: auto;
+}
+
+.login_links {
+  padding: 5px 0;
+  width: 422px;
+}
+
+.login_page_top_border {
+  border-top: 4px solid skyblue;
+  margin-top: 10px;
+}
+
+.login_header {
+  background-color: skyblue;
+  color: darkslategrey;
+  padding: 5px 10px;
+  width: 400px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.reset_login_labels {
+  width: 145px;
+  margin: 0 15px 0 20px;
+}
+
+/* login page styles end */
+
+/* header and footer styles start */
+
+#header {
+  margin: 20px 10px;
+}
+
+.dropdown-menu a {
+  font-size: 14px;
+}
+
+.welcome {
+  text-align: right;
+  font-size: 11px;
+  margin: 5px -10px;
+  position: absolute;
+}
+
+#footer {
+  margin: 10px;
+}
+
+a.settings, a:hover.settings {
+  color: skyblue;
+}
+
+/* header and footer styles end */
+
+/* nav bar styles start */
+
+#menu ul {
+  list-style: none;
+  padding-top: 9px;
+}
+
+#menu ul li.mail_item {
+  float: right;
+  margin-left: 2px;
+}
+
+#menu a.main_link {
+    color: #504A4B;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#menu a.main_link:hover, #menu a.main_link.selected {
+  color: white;
+  background-color: #55B4F4
+}
+
+.admin_item {
+  text-align: right;  
+}
+
+/* nav bar styles end */

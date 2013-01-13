@@ -3,6 +3,10 @@ Cytosite::Application.routes.draw do
 
   get "static_pages/help"
 
+  get "static_pages/overview"
+
+  get "static_pages/images"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
