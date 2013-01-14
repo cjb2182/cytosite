@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def overview
   end
+
+  def new
+  end
 end
