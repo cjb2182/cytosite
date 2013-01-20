@@ -36,8 +36,9 @@
   <h3 class="login_header">Sign up</h3>
   <form accept-charset="UTF-8" action="/users" class="user_new" id="user_new" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eqMwTJeRK89xj2G+Q8Dt4IloDBfSzAmNvjNJuH4Lcc0=" /></div>
       <div class="row">
-  <div class="span6 offset3">
+  <div class="center offset1">
     <%= form_for(@user) do |f| %>
+     <%= render 'shared/error_messages' %>
 
       <%= f.label :name %>
       <%= f.text_field :name %>
@@ -51,7 +52,7 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Sign Up", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
 </div>
@@ -59,11 +60,6 @@
 
 
        <div class="clearfix"></div>
-    </div>
-    <div class="span5">
-      <div class="pull-right">
-        <input class="btn" id="user_submit" name="commit" type="submit" value="Sign up" />
-      </div>
     </div>
     <div class="clearfix"></div>
     <div class="login_links login_page_top_border">
