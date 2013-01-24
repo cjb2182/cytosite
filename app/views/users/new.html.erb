@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CytoSite</title>
+    <link href="/images/favicon.ico" rel="shortcut icon">
+    <link href="/stylesheets/bootstrap.min.css?1337892747" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/style.css?1337892747" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery-1.7.js?1337892747" type="text/javascript"></script>
+<script src="/javascripts/rails.js?1337892747" type="text/javascript"></script>
+<script src="/javascripts/application.js?1337892747" type="text/javascript"></script>
+
+    <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="eqMwTJeRK89xj2G+Q8Dt4IloDBfSzAmNvjNJuH4Lcc0="/>
+  </head>
+  <body class='devise-registrations new'>
+    <div class="container">
+      <div id="header">
+  <div class="pull-left">
+    <h1><span style="color:navy;">Cyto</span><span style="color:skyblue;">Site</span></h1>
+  </div>
+  <div id="menu" class="pull-right">
+    <div class="clearfix"></div>
+    <ul><li>
+      <a class="main_link">Contact Us</a>
+     </li></ul>
+  </div>
+  <div class="clearfix"></div>
+</div>
+      <div class="box">
+        <div class="clearfix"></div>
+        <div class="container">
+          <div class="side_padded">
+
+          </div>
+          <div class="span7 offset3">
+  <h3 class="login_header">Sign up</h3>
+  <form accept-charset="UTF-8" action="/users" class="user_new" id="user_new" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eqMwTJeRK89xj2G+Q8Dt4IloDBfSzAmNvjNJuH4Lcc0=" /></div>
+      <div class="row">
+  <div class="center offset1">
+    <%= form_for(@user) do |f| %>
+     <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Sign Up", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+
+
+       <!--div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="login_links login_page_top_border">
+      <div class="pull-right">
+        Already a member?&nbsp;<a href="/users/sign_in">Sign in here!</a>
+      </div>
+    </div>
+</form></div>
+        </div>
+      </div>
+      <div id="footer">
+  <span>Copyright © 2010 Re-used with the permission of<strong> XYZ</strong>. All rights reserved.</span>
+</div>
+    </div-->
+  </body>
+</html>
