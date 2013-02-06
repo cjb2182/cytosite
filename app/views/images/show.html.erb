@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Description:</b>
-  <%= @image.description %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @image.category %>
-</p>
-
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<% provide(:title, @image.description) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <!--%= gravatar_for @image %-->
+        <%= @image.description %>
+        <%= @image.category %>
+      </h1>
+   </section>
+  </aside>
+</div>
