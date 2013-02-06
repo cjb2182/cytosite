@@ -1,0 +1,7 @@
+<ul class="users">
+  <% @images.each do |image| %>
+    <li>
+      <%= link_to image.description, image %>
+    </li>
+  <% end %>
+</ul>
